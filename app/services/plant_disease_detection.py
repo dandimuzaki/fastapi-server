@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image
 import json
 import time
-from schemas.plant_disease_detection import PredictionResponse
+from app.schemas.plant_disease_detection import PredictionResponse
 from huggingface_hub import hf_hub_download
 
 def download_model(model_name):

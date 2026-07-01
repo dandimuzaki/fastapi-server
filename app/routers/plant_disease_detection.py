@@ -1,8 +1,8 @@
 from fastapi import APIRouter, UploadFile, File, Query
 from fastapi.responses import JSONResponse
-from services.plant_disease_detection import predictor
+from app.services.plant_disease_detection import predictor
 from http import HTTPStatus
-from schemas.plant_disease_detection import PredictionResponse, ModelName
+from app.schemas.plant_disease_detection import PredictionResponse, ModelName
 
 router = APIRouter()
 
