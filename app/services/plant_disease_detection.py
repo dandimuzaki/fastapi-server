@@ -36,10 +36,10 @@ class PlantDiseasePredictor:
       },
     }
 
-    with open("ml/plant_disease_detection/class_names.json") as f:
+    with open("app/ml/plant_disease_detection/class_names.json") as f:
       self.class_names = json.load(f)
 
-    with open('ml/plant_disease_detection/explanation.json', 'r', encoding='utf-8') as f:
+    with open('app/ml/plant_disease_detection/explanation.json', 'r', encoding='utf-8') as f:
       self.explanation = json.load(f)
 
   def preprocess_image(self, file):
