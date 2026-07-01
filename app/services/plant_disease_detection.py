@@ -18,18 +18,18 @@ def download_model(model_name):
 class PlantDiseasePredictor:
   def __init__(self):
     self.models = {
-      "cnn": {
-        "display_name": "Custom CNN",
-        "model": download_model("custom_cnn"),
-      },
-      "resnet": {
-        "display_name": "ResNet50",
-        "model": download_model("resnet50"),
-      },
-      "mobilenet": {
-        "display_name": "MobileNetV3",
-        "model": download_model("mobilenetv3"),
-      },
+      # "cnn": {
+      #   "display_name": "Custom CNN",
+      #   "model": download_model("custom_cnn"),
+      # },
+      # "resnet": {
+      #   "display_name": "ResNet50",
+      #   "model": download_model("resnet50"),
+      # },
+      # "mobilenet": {
+      #   "display_name": "MobileNetV3",
+      #   "model": download_model("mobilenetv3"),
+      # },
       "efficientnet": {
         "display_name": "EfficientNetB0",
         "model": download_model("efficientnetb0"),
