@@ -9,7 +9,8 @@ router = APIRouter()
 @router.post(
   "/plant_disease_detection/predict", 
   response_model=PredictionResponse,
-  status_code=HTTPStatus.ACCEPTED,)
+  status_code=HTTPStatus.ACCEPTED
+)
 async def predict(
   image: UploadFile = File(...),
   model: ModelName = Query(ModelName.efficientnet)
