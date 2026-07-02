@@ -7,7 +7,7 @@ from app.schemas.plant_disease_detection import PredictionResponse, ModelName
 router = APIRouter()
 
 @router.post(
-  "/plant_disease_detection/predict", 
+  "/plant-disease-detection/predict", 
   response_model=PredictionResponse,
   status_code=HTTPStatus.ACCEPTED
 )
