@@ -52,12 +52,16 @@ class PlantDiseasePredictor:
     return input_arr
     
   def predict(self, image_file, model_name):
+    print("Request received")
     image = self.preprocess_image(image_file)
+    print("Image processed")
     model_info = self.models[model_name]
 
     start = time.time()
+    print("start", start)
     prediction = model_info["model"].predict(image)
     end = time.time()
+    print("end", end)
     inference_time = (end-start)*1000
 
     predicted_idx = int(np.argmax(prediction))
